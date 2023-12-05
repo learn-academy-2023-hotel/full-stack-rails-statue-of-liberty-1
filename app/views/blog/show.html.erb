@@ -1,0 +1,10 @@
+<h1> <%= @blogs.title %> </h1>
+
+<h3>  <%= @blogs.content %> </h3>
+
+<h3><%= link_to 'Back to Blogs', blogs_path %>
+<%= link_to 'Update Blog',
+    edit_blog_path(@blogs) %>
+    <br/><br/>
+<%= button_to 'Remove Blog', delete_blog_path, method: 'delete' %>
+<br/>
